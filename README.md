@@ -1,4 +1,4 @@
-# Alten Trial App
+# Alten Trial Product API
 
 ## Description
 This repository is for the alten product trial api using Laravel
@@ -8,8 +8,8 @@ Follow these steps to set up the project locally:
 
 1. **Clone the repository**: 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/Anag42/alten-trial-api
+   cd alten-trial-api
    ```
 
 2. **Install dependencies: Ensure you have Composer installed, then run**:
