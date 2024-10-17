@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "519262e6-d48f-45ca-902e-01e033b279dc",
+		"name": "ALTEN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1678597"
+	},
+	"item": [
+		{
+			"name": "Product findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product findOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "PROD-0001",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Product 1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Lorem Ipsum",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/PC/Pictures/Camera Roll/satoru-gojo-jujutsu-kaisen-5k-ac-2560x1440.jpg"
+						},
+						{
+							"key": "category",
+							"value": "Category 1",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "9.99",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "internalReference",
+							"value": "REF-0001",
+							"type": "text"
+						},
+						{
+							"key": "shellId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "inventoryStatus",
+							"value": "INSTOCK",
+							"description": "One of the following Status are allowed: INSTOCK | LOWSTOCK | OUTOFSTOCK",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "_method",
+							"value": "PATCH",
+							"description": "// Workaround fix as laravel doesn't allow PUT or Patch with form-data",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "CODE 1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Product 1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "Lorem Ipsum",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "Category One",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "100.00",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "quantity",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "internalReference",
+							"value": "REF01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "shellId",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "inventoryStatus",
+							"value": "LOWSTOCK",
+							"description": "One of the following Status are allowed: INSTOCK | LOWSTOCK | OUTOFSTOCK",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
